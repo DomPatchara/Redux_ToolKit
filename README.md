@@ -17,6 +17,19 @@
 
 ## [3] *Redux Provider* wrapp children 
    เราต้องครอบ components ทั้งหมดของเราด้วย Redux Provider (create in form component)
+   ``` javascript
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
+
+const ReduxProvider = ({children}) => {
+  return
+     <Provider store={store}>
+       {children}
+     </Provider>;
+};
+
+export default ReduxProvider;
+   ```
 
 ## [4] useSelector + useDispatch ( ใช้ข้อมูลจาก store )
  - [4.1] **useSelector** : คือการดึงข้อมูลมาใช้จาก Store
