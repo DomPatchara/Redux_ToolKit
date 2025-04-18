@@ -22,8 +22,14 @@
  - [4.1] **useSelector** : คือการดึงข้อมูลมาใช้จาก Store
          Ex. const movies = useSelector((state) => state.XStore.movies)
  - [4.2] **useDispatch** : คือการใช้ function จาก Slice ( import 1.useDispatch + 2.function from Slice )
-   Ex. const dispatch = useDispatch(); 
-       const handleRemoveMovie = (id) => { dispatch(removeMovie(id)) };
+
+   ``` javascript
+    const dispatch = useDispatch(); 
+    const handleRemoveMovie = (id) => {
+        dispatch(removeMovie(id)
+   )};
+   ```
+   
 
 # Screen Shot
 ![image](https://github.com/user-attachments/assets/ad253fc0-85f3-4048-9997-0926d4fee553)
