@@ -20,7 +20,8 @@
 
 ## [4] useSelector + useDispatch ( ใช้ข้อมูลจาก store )
  - [4.1] **useSelector** : คือการดึงข้อมูลมาใช้จาก Store
-         Ex. const movies = useSelector((state) => state.XStore.movies)
+    ``` javascript
+         const movies = useSelector((state) => state.XStore.movies)
  - [4.2] **useDispatch** : คือการใช้ function จาก Slice ( import 1.useDispatch + 2.function from Slice )
 
    ``` javascript
