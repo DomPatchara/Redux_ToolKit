@@ -24,6 +24,9 @@
  - [4.2] **useDispatch** : คือการใช้ function จาก Slice ( import 1.useDispatch + 2.function from Slice )
 
    ``` javascript
+    import { useDispatch } from "react-redux";             // 1. import useDispatch
+    import { removeMovie } from "../redux/movieSlice";    // 2. import function 
+   
     const dispatch = useDispatch(); 
     const handleRemoveMovie = (id) => {
         dispatch(removeMovie(id)
